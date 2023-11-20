@@ -1,0 +1,28 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+  
+  .title__home {
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__text {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.header__text:hover{
+    color: #df8682;
+}
+  
