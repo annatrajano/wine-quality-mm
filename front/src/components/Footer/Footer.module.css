@@ -1,0 +1,35 @@
+.footer__container {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px;
+
+  text-align: center;
+  color: white;
+}
+
+.horizontal__line {
+  border: 1px solid #df8682;
+  width: 40%;
+}
+
+.footer__text {
+  line-height: 2;
+  font-size: 2rem;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.icons {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.footer__text__company {
+  line-height: 2;
+}
