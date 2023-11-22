@@ -4,12 +4,11 @@
   gap: 10px;
 }
 
-input[type="email"],
+input[type="number"],
 input[type="password"],
 input[type="text"],
 input[type="textarea"] {
   border-radius: 4px;
-  border: 1.5px solid #fdb15f;
   padding: 15px;
 }
 
