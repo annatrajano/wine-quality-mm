@@ -6,3 +6,14 @@
 .form__container {
   margin: 5% 40%;
 }
+
+.bttn__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+
+.text__quality {
+  color: white;
+}
