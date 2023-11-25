@@ -14,15 +14,15 @@ Veja o exemplo a seguir do layout do projeto!
 
 Page 1 - Header and Background            
 :-------------------------:|
-![Screeshot](./public/images/img-1.png)  |
+![Screeshot](./front/public/images/img-1.png)  |
 
 Page 1 - Form              
 :-------------------------:|
-![Screeshot](./public/images/img-2.png)  |
+![Screeshot](./front/public/images/img-2.png)  |
 
 Page 1 - Form and Footer            
 :-------------------------:|
-![Screeshot](./public/images/img-3.png)  |
+![Screeshot](./front/public/images/img-3.png)  |
 
  
 ## Instalação do projeto localmente:
