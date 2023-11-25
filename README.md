@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+Este projeto contém os requisitos realizados por _[Anna Beatriz Garcia Trajano de Sá](www.linkedin.com/in/anna-beatriz-trajano-de-sá)_ enquanto cursava o curso de Pós-Graduação da PUC-RIO em Engenharia de Software. Ele engloba as disciplinas estudadas na segunda sprint (Qualidade de Software, Segurança e Sistemas Inteligentes) e corresponde à parte Front-end e Back-end da aplicação.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Wine Quality App
 
-## Available Scripts
+Neste projeto desenvolvi um app para avaliar vinhos com base em alguns atributos.
 
-In the project directory, you can run:
+Para isso, foi preciso construir e treinar um modelo Machine Learning a partir de um dataset.
 
-### `npm start`
+O front-end da aplicação foi feito em React e o back-end em Flask!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Veja o exemplo a seguir do layout do projeto!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Layout
 
-### `npm test`
+Page 1 - Header and Background            
+:-------------------------:|
+![Screeshot](./public/images/img-1.png)  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Page 1 - Form              
+:-------------------------:|
+![Screeshot](./public/images/img-2.png)  |
 
-### `npm run build`
+Page 1 - Form and Footer            
+:-------------------------:|
+![Screeshot](./public/images/img-3.png)  |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 
+## Instalação do projeto localmente:
+ 
+Após cada um dos passos, haverá um exemplo do comando a ser digitado para fazer o que está sendo pedido, caso tenha dificuldades e o exemplo não seja suficiente, não hesite em me contatar em _annagarcia@id.uff.br_ 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Abra o terminal e crie um diretório no local de sua preferência com o comando **mkdir**:
+```javascript
+  mkdir projetos
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Entre no diretório que acabou de criar e depois clone o projeto:
+```javascript
+  cd projetos
+  git clone git@github.com:annatrajano/wine-quality-mm.git
+```
 
-### `npm run eject`
+3. Acesse o diretório do projeto e, posteriormente, a pasta **api**. Depois utilize o comando **pip install -r requirements.txt** para instalar todas as libs necessárias ( já com a virtualenv ativada ):
+```javascript
+  cd wine-quality-mm/api
+  (env)$ pip install -r requirements.txt
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Para executar a API  basta digitar:
+```javascript
+  (env)$ flask run --host 0.0.0.0 --port 5000 --reload
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Para inicializar a aplicação no front-end, acesse a pasta **front** e depois utilize o comando **npm i** para instalar todas as dependências necessárias:
+```javascript
+  cd wine-quality-mm/front
+  npm i
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Por último, rode o comando **npm start** e acesse o projeto via browser, no caminho `http://localhost:3000/`.
+```javascript
+  npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Habilidades Desenvolvidas
 
-## Learn More
+Neste projeto, desenvolvi as seguintes habilidades:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ - Componentes reativos e modulares;
+ - Arquivos estáticos;
+ - React Router;
+ - CSS Module;
+ - Estruturar uma API em Flask;
+ - Treinamento e Costrução de um modelo Machine Learning.
+ 
+ ## Referências - Front-end e Back-end
+ [React](https://legacy.reactjs.org/docs/getting-started.html)<br>
+ [CSS Module](https://blog.logrocket.com/a-deep-dive-into-css-modules/)<br>
+ [React Icons](https://react-icons.github.io/react-icons/)<br>
+ [Flask](https://flask.palletsprojects.com/en/2.3.x/quickstart/)<br>
+ [Wine Quality - Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)<br>
+ [Conventional Commits](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Escopo do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - Treinamento e Construção do Modelo Machine Learning com base no Dataset;
+ - Construção da API em Flask;
+ - Carregamento do modelo de forma embarcada na aplicação;
+ - Construção do Front-end em React.
