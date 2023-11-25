@@ -1,7 +1,6 @@
 .formInput__container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 input[type="number"],
@@ -9,7 +8,9 @@ input[type="password"],
 input[type="text"],
 input[type="textarea"] {
   border-radius: 4px;
-  padding: 15px;
+  padding: 10px;
+  font-size: 1rem;
+
 }
 
 input[type="textarea"] {
@@ -19,6 +20,10 @@ input[type="textarea"] {
 .label__input {
   font-size: 20px;
   color: white;
+  line-height: 2;
+  font-family: 'Catamaran', sans-serif;
+  
+
 }
 
 .p_input__component {

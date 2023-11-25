@@ -24,7 +24,6 @@ export default function Home() {
     });
     const response = await wineQualityPredict({ data: arrOfNum });
     setQuality(response);
-    setValues({})
     console.log(response);
   }
 
@@ -41,7 +40,6 @@ export default function Home() {
       disabled: false,
       label: "Fixed Acidity",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 2,
@@ -51,7 +49,6 @@ export default function Home() {
       disabled: false,
       label: "Volatile Acidity",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 3,
@@ -61,7 +58,6 @@ export default function Home() {
       disabled: false,
       label: "Citric Acid",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 4,
@@ -71,7 +67,6 @@ export default function Home() {
       disabled: false,
       label: "Residual Sugar",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 5,
@@ -81,8 +76,9 @@ export default function Home() {
       disabled: false,
       label: "Chlorides",
       required: true,
-      errorMessage: "This field is required",
     },
+  ];
+  const secondInputSection = [
     {
       id: 6,
       name: "free_sulfur_dioxide",
@@ -91,7 +87,6 @@ export default function Home() {
       disabled: false,
       label: "Free Sulfur Dioxide",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 7,
@@ -101,7 +96,6 @@ export default function Home() {
       disabled: false,
       label: "Total Sulfur Dioxide",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 8,
@@ -111,7 +105,6 @@ export default function Home() {
       disabled: false,
       label: "Density",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 9,
@@ -121,7 +114,6 @@ export default function Home() {
       disabled: false,
       label: "pH",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 10,
@@ -131,7 +123,6 @@ export default function Home() {
       disabled: false,
       label: "Sulphates",
       required: true,
-      errorMessage: "This field is required",
     },
     {
       id: 11,
@@ -141,34 +132,53 @@ export default function Home() {
       disabled: false,
       label: "Alcohol",
       required: true,
-      errorMessage: "This field is required",
     },
   ];
+
   return (
     <div className={styles.home__container}>
       <Header />
       <Background />
       <section className={styles.section__container}>
+        <h2 className={styles.section__text}>
+          A mix of wine, quality and Machine Learning
+        </h2>
+        <h3 className={styles.section__subtext}>
+          In order to predict and evaluate the wine of your choice, fill out the
+          form and... enjoy!
+        </h3>
         <form className={styles.form__container}>
-          {firstInputSection.map((input) => (
-            <FormInput
-              key={input.id}
-              {...input}
-              value={values[input.name]}
-              onChange={onChange}
-            />
-          ))}
-          <div className={styles.bttn__container}>
-            <button
-              className={styles.bttn__quality}
-              type="button"
-              onClick={handleSubmit}
-            >
-              <p className={styles.text__bttn}>Avaliar</p>
-            </button>
+          <div>
+            {firstInputSection.map((input) => (
+              <FormInput
+                key={input.id}
+                {...input}
+                value={values[input.name]}
+                onChange={onChange}
+              />
+            ))}
+          </div>
+          <div>
+            {secondInputSection.map((input) => (
+              <FormInput
+                key={input.id}
+                {...input}
+                value={values[input.name]}
+                onChange={onChange}
+              />
+            ))}
           </div>
         </form>
-        {quality ? <h2 className={styles.text__quality} >{quality}</h2> : ""}
+        <div className={styles.bttn__container}>
+          <button
+            className={styles.bttn__quality}
+            type="button"
+            onClick={handleSubmit}
+          >
+            <p className={styles.text__bttn}>Evaluate</p>
+          </button>
+        </div>
+        {quality ? <h2 className={styles.text__quality}>{quality}</h2> : ""}
       </section>
       <Footer />
     </div>

@@ -16,6 +16,7 @@
 .footer__text {
   line-height: 2;
   font-size: 2rem;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .footer__icons {
@@ -32,4 +33,5 @@
 
 .footer__text__company {
   line-height: 2;
+  font-family: 'Catamaran', sans-serif;
 }

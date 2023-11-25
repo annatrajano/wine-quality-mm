@@ -14,12 +14,14 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-family: 'Catamaran', sans-serif;
   }
   
   .header__text {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'Catamaran', sans-serif;
   }
 
 .header__text:hover{
