@@ -51,7 +51,7 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
   (env)$ flask run --host 0.0.0.0 --port 5000 --reload
 ```
 
-5. Para inicializar a aplicação no front-end, acesse a pasta **front** e depois utilize o comando **npm i** para instalar todas as dependências necessárias:
+5. Para inicializar a aplicação no front-end acesse a pasta **front** e depois utilize o comando **npm i** para instalar todas as dependências necessárias:
 ```javascript
   cd wine-quality-mm/front
   npm i
