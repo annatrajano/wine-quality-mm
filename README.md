@@ -62,6 +62,11 @@ Após cada um dos passos, haverá um exemplo do comando a ser digitado para faze
   npm start
 ```
 
+7. Caso queira rodar o teste do modelo feito em Pytest, basta acessar a pasta da **api** e rodar o seguinte comando:
+```javascript
+  pytest -v test_model.py
+```
+
 ## Habilidades Desenvolvidas
 
 Neste projeto, desenvolvi as seguintes habilidades:
@@ -71,14 +76,18 @@ Neste projeto, desenvolvi as seguintes habilidades:
  - React Router;
  - CSS Module;
  - Estruturar uma API em Flask;
- - Treinamento e Costrução de um modelo Machine Learning.
+ - Treinamento e Costrução de um modelo Machine Learning;
+ - Criação do teste para o modelo criado com Pytest.
  
- ## Referências - Front-end e Back-end
+ ## Referências - Front-end, Back-end e Machine Learning
  [React](https://legacy.reactjs.org/docs/getting-started.html)<br>
  [CSS Module](https://blog.logrocket.com/a-deep-dive-into-css-modules/)<br>
  [React Icons](https://react-icons.github.io/react-icons/)<br>
  [Flask](https://flask.palletsprojects.com/en/2.3.x/quickstart/)<br>
+ [Pytest](https://docs.pytest.org/en/7.1.x/getting-started.html)<br>
  [Wine Quality - Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)<br>
+ [Wine Quality Prediction](https://www.geeksforgeeks.org/wine-quality-prediction-machine-learning/)<br>
+ [Building a Random Forest Classifier](https://soumenatta.medium.com/building-a-random-forest-classifier-with-wine-quality-dataset-in-python-95e798702f2c)<br>
  [Conventional Commits](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)<br>
 
 
@@ -87,4 +96,5 @@ Neste projeto, desenvolvi as seguintes habilidades:
  - Treinamento e Construção do Modelo Machine Learning com base no Dataset;
  - Construção da API em Flask;
  - Carregamento do modelo de forma embarcada na aplicação;
+ - Teste do modelo em Pytest;
  - Construção do Front-end em React.
