@@ -14,8 +14,8 @@ url = "winequality-white.csv"
 dataset = loader.charge_data(url)
 
 # Separating input and output data
-X = dataset.drop('quality', axis=1)
-Y = dataset['quality']
+X = dataset.iloc[:,0:-1]
+Y = dataset.iloc[:,-1]
 
 
 def test_model_rf():  
